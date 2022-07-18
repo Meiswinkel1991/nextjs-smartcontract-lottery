@@ -2,10 +2,11 @@ import Head from "next/head"
 import styles from "../styles/Home.module.css"
 
 import Header from "../components/Header"
+import LotteryEntrance from "../components/LotteryEntrance"
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className="container bg-slate-400 h-screen">
             <Head>
                 <title>Decentralized Lottery</title>
                 <meta name="description" content="My first lottery" />
@@ -13,6 +14,7 @@ export default function Home() {
             </Head>
             {/* header / connect button / navbar */}
             <Header />
+            <LotteryEntrance />
         </div>
     )
 }
